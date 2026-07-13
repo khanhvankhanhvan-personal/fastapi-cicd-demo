@@ -30,7 +30,7 @@ def add(a: float, b: float):
     Cộng 2 số, truyền qua query string: /add?a=1&b=2
     FastAPI tự validate kiểu dữ liệu: truyền chữ sẽ bị trả lỗi 422.
     """
-    return {"a": a, "b": b, "result": a - b}
+    return {"a": a, "b": b, "result": a + b}
 
 
 @app.get("/divide")
